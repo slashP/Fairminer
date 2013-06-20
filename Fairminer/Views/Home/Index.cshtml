@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div data-viewmodel="Home/HomeVM">
+    <div class="image-list" data-bind="foreach: images">
+        <div class="home-image">
+            <img data-bind="attr: { src: imageURL }">
+        </div>
+    </div>
+</div>
